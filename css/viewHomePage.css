@@ -94,6 +94,7 @@
 }
 
 .remove__post {
+    cursor: pointer;
     border: none;
     font-size: 30px;
 }
@@ -107,7 +108,7 @@
 /*-- content post for create posts button*/
 
 .add__posts {
-    height: 360px;
+    height: 293px;
     text-align: center;
     padding-top: 50px;
     display: flex;
@@ -118,20 +119,18 @@
 /*-- create posts button config --*/
 
 .add_posts-button {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, rgba(40, 191, 191, 1), #605fab);
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px -1px 5px #06097c inset, -1px 1px 2px rgba(0, 0, 0, .8);
+    background: rgba(1, 197, 255, 1);
+    padding: 18px 15px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
 }
 
-.add_posts-button:active {
-    box-shadow: 1px -1px 5px #06097c inset, -1px 1px 2px rgba(0, 0, 0, .8);
-    transform: scale(.98);
+.add_posts-button:hover {
+    background: rgba(40, 191, 191, 1);
 }
 
 .post__icon-config {

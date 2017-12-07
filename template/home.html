@@ -23,40 +23,42 @@
                             </div>
                         </header>
                     </div>
-                    <!-- content sections -->
-                    <section class="content__section">
-                        <!-- content section top -->
-                        <div class="content__section-top">
-                            <div class="content__post" ng-repeat="lists in list track by $index">
-                                <div class="row">
-                                    <a class="post__name col-md-6 col-6" href="#/{{lists.id}}">{{lists.name}}</a>
-                                    <div class="post__count col-md-3 col-3">
-                                        <div class="post__count">
-                                            <span class="post__count-length">{{lists.coment.length}}</span>
-                                        </div>
+                </div>
+                <!-- content sections -->
+                <section class="content__section">
+                    <!-- content section top -->
+                    <div class="content__section-top">
+                        <div class="content__post" ng-repeat="lists in list track by $index">
+                            <div class="row">
+                                <a class="post__name col-md-6 col-6" href="#/{{lists.id}}">{{lists.name}}</a>
+                                <div class="post__count col-md-3 col-3">
+                                    <div class="post__count">
+                                        <span class="post__count-length">{{lists.coment.length}}</span>
                                     </div>
-                                    <div class="col-md-3 col-3">
-                                        <div class="post__delete">
-                                            <a class="remove__post" ng-click="removedPost(lists)">
-                                                <i class="fa fa-times remove__post-icon" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
+                                </div>
+                                <div class="col-md-3 col-3">
+                                    <div class="post__delete">
+                                        <a class="remove__post" ng-click="removedPost(lists)">
+                                            <i class="fa fa-times remove__post-icon" aria-hidden="true"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <!-- content section bottom -->
-                        <div class="add__posts">
+
+                    </div>
+                    <!-- content section bottom -->
+                    <div class="add__posts">
+
+
+
+                        <div class="button__style-contain">
                             <a class="add_posts-button" href="#/create">
-                                <div class="post__button-icon">
-                                    <i class="fa fa-plus post__icon-config" aria-hidden="true"></i>
-                                </div>
+                                <i class="fa fa-plus post__icon-config" aria-hidden="true"></i>
                             </a>
                         </div>
-                    </section>
-                </div>
-
+                    </div>
+                </section>
             </div>
         </div>
     </div>
