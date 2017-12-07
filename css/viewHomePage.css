@@ -63,7 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 60px;
 }
 
 .post__delete {
@@ -78,14 +78,13 @@
     padding-bottom: 10px;
     padding-right: 20px;
     padding-left: 20px;
-    background: rgba(254, 35, 145, 1);
 }
 
 .post__count-length {
     font-family: 'Nunito', sans-serif;
     font-size: 25px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,13 +94,13 @@
 }
 
 .remove__post {
-    border: 0;
-    background: rgba(254, 35, 145, 1);
+    border: none;
     font-size: 30px;
 }
 
 .remove__post-icon {
-    color: #fff;
+    font-size: 55px;
+    color: rgba(255, 0, 0, 1);
 }
 
 
@@ -111,18 +110,20 @@
     height: 360px;
     text-align: center;
     padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 
 /*-- create posts button config --*/
 
 .add_posts-button {
-    width: 125px;
-    height: 125px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     background: linear-gradient(to bottom, rgba(40, 191, 191, 1), #605fab);
     position: relative;
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 1px -1px 5px #06097c inset, -1px 1px 2px rgba(0, 0, 0, .8);
@@ -133,11 +134,7 @@
     transform: scale(.98);
 }
 
-.post__button-icon {
-    padding-top: 35px;
-}
-
 .post__icon-config {
-    font-size: 50px;
+    font-size: 35px;
     color: #fff;
 }
