@@ -1,0 +1,36 @@
+/** test block-img for avatar **/
+
+.img {
+    width: 40px;
+    height: 40px;
+    background: rgba(40, 191, 191, 1);
+    display: inline-block;
+}
+
+
+/** content about coment **/
+
+.posts__comment-box {
+    height: 400px;
+    margin: 20px 0 0 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.post__view {
+    padding: 7px 30px;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.posts__view-config {
+    padding: 0;
+}
+
+.header__title-create-comment {
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    width: 245px;
+    overflow: hidden;
+    font-size: 40px;
+}

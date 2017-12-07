@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div ng-controller="postsHomeCtrl">
+        <!-- container -->
+        <div class="container">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- header -->
+                        <header class="header">
+                            <div class="header__title">
+                                <p class="paragraph__title">Sayer</p>
+                                <p class="paragraph__subtitle">World's most under time waster</p>
+                            </div>
+                        </header>
+                    </div>
+                    <!-- content sections -->
+                    <section class="content__section">
+                        <!-- content section top -->
+                        <div class="content__section-top">
+                            <div class="content__post" ng-repeat="lists in list track by $index">
+                                <div class="row">
+                                    <a class="post__name col-md-6 col-6" href="#/{{lists.id}}">{{lists.name}}</a>
+                                    <div class="post__count col-md-3 col-3">
+                                        <div class="post__count">
+                                            <span class="post__count-length">{{lists.coment.length}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-3">
+                                        <div class="post__delete">
+                                            <a class="remove__post" ng-click="removedPost(lists)">
+                                                <i class="fa fa-times remove__post-icon" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- content section bottom -->
+                        <div class="add__posts">
+                            <a class="add_posts-button" href="#/create">
+                                <div class="post__button-icon">
+                                    <i class="fa fa-plus post__icon-config" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

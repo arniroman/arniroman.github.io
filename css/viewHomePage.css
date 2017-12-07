@@ -1,0 +1,143 @@
+/*-- header --*/
+
+.header__title {
+    padding: 40px 0 0 25px;
+}
+
+.paragraph__title,
+.paragraph__subtitle {
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+
+.paragraph__title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.paragraph__subtitle {
+    font-size: 16px;
+}
+
+
+/*-- content post --*/
+
+.content__section {
+    width: 100%;
+}
+
+.content__section-top {
+    max-width: 510px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content__post {
+    margin-left: 25px;
+    padding: 20px 0;
+}
+
+
+/*-- content post left --*/
+
+.post__name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #222;
+    overflow: hidden;
+    padding-left: 25px;
+}
+
+.post__name:hover {
+    text-decoration: none;
+    color: rgba(40, 191, 191, 1);
+}
+
+
+/*-- content post right --*/
+
+.post__count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.post__delete {
+    display: flex;
+    width: 70px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: rgba(254, 35, 145, 1);
+}
+
+.post__count-length {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(1, 197, 255, 1);
+    color: #fff;
+}
+
+.remove__post {
+    border: 0;
+    background: rgba(254, 35, 145, 1);
+    font-size: 30px;
+}
+
+.remove__post-icon {
+    color: #fff;
+}
+
+
+/*-- content post for create posts button*/
+
+.add__posts {
+    height: 360px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/*-- create posts button config --*/
+
+.add_posts-button {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgba(40, 191, 191, 1), #605fab);
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px -1px 5px #06097c inset, -1px 1px 2px rgba(0, 0, 0, .8);
+}
+
+.add_posts-button:active {
+    box-shadow: 1px -1px 5px #06097c inset, -1px 1px 2px rgba(0, 0, 0, .8);
+    transform: scale(.98);
+}
+
+.post__button-icon {
+    padding-top: 35px;
+}
+
+.post__icon-config {
+    font-size: 50px;
+    color: #fff;
+}

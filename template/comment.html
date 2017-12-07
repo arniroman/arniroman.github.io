@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div ng-controller="createCommentsCtrl">
+        <!-- wrapper -->
+        <div class="wrapper">
+            <!-- header -->
+            <header class="header">
+                <div class="row">
+                    <!-- header-left -->
+                    <div class="header__left-create col-md-2 col-2">
+                        <div class="button__style-contain">
+                            <a class="button__style" href="#/home">
+                                <i class="fa fa-arrow-left button__back-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- header right -->
+                    <div class="header__right-create col-md-10 col-10">
+                        <p class="header__title-create-comment">{{post.name}}</p>
+                    </div>
+                </div>
+            </header>
+            <!-- content about created coment -->
+            <section class="content__create-comment">
+                <div class="comment__box-content">
+                    <div class="posts__comment-box">
+                        <div ng-repeat="posts in post.coment track by $index">
+                            <div class="post__list">
+                                <div class="row">
+                                    <div class="col-md-1 col-2">
+                                        <div class="img"></div>
+                                    </div>
+                                    <div class="col-md-11 col-10 post__view-config">
+                                        <div class="post__view">{{posts}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- form for create comment -->
+                <div class="form__create-comment ">
+                    <div class="row">
+                        <div class="col-md-7 col-7">
+                            <div class="group">
+                                <input ng-model="newComment" type="text" required>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-5">
+                            <div class="button__style-contain button__contain-config">
+                                <a class="button__style" ng-click="addNewComent()">
+                                    <i class="fa fa-chevron-right button__back-icon" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+    </div>
+    </section>
+    <section class="add-height"></section>
+    <!--<input type="text" ng-model="newComment">
+                    <button ng-click="addNewComent()">Add comentos</button>-->
+
+    </div>
+
+    </div>
+</body>
+
+</html>

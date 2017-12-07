@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div ng-controller="createPostCtrl">
+        <!-- wrapper -->
+        <div class="wrapper">
+            <!-- header -->
+            <header class="header">
+                <!-- header left -->
+                <div class="row">
+                    <div class="header__left-create col-md-2 col-2">
+                        <div class="button__style-contain">
+                            <a class="button__style" href="#/home">
+                                <i class="fa fa-arrow-left button__back-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- header right -->
+                    <div class="header__right-create col-md-10 col-10">
+                        <p class="header__title-create">Create new item</p>
+                    </div>
+                </div>
+            </header>
+            <!-- create post input -->
+            <section class="content__create-post">
+                <div class="row">
+                    <div class="col-md-7 col-7">
+                        <div class="group">
+                            <input ng-model="newlistPost" type="text" required>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <!-- create post with the help of button -->
+                    <div class="col-md-5 col-5">
+                        <div class="button__style-contain button__contain-config">
+                            <a class="button__style" ng-click="newPostBtn()" href="#/home">
+                                <i class="fa fa-chevron-right button__back-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="add-height"></section>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
