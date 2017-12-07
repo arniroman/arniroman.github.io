@@ -1,23 +1,19 @@
 /*-- module init --*/
 let app = angular.module('app', ['ngRoute']);
 /*-- routing --*/
-app.config(['$routeProvider', '$locationProvider', function($routeProvide, $locationProvider) {
+app.config(['$routeProvider', function($routeProvide) {
     $routeProvide
         .when('/', {
-            templateUrl: 'template/home.html',
-            //controller: 'sayerHomeCtrl'
+            templateUrl: 'template/home.html'
         })
         .when('/home', {
-            templateUrl: 'template/home.html',
-            // controller: 'sayerHomeCtrl'
+            templateUrl: 'template/home.html'
         })
         .when('/create', {
-            templateUrl: 'template/create.html',
-            //controller: 'createCtrl'
+            templateUrl: 'template/create.html'
         })
         .when('/:postId', {
-            templateUrl: 'template/comment.html',
-            //controller: 'commentCtrl'
+            templateUrl: 'template/comment.html'
         })
         .otherwise({
             redirectTo: '/'
@@ -65,7 +61,7 @@ app.controller('createCommentsCtrl', function($scope, $routeParams, _save, _read
     $scope.post = _.find($scope.list, { id: postId })
     $scope.addNewComent = function() {
         $scope.list.filter(function(elem) {
-            if (elem.id == postId) {
+            if (elem.id == postId && $scope.newComment != undefined) {
                 elem.coment.push($scope.newComment)
                 _save($scope.list)
             }
