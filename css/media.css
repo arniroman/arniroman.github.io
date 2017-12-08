@@ -1,0 +1,32 @@
+@media screen and (max-width: 480px) {
+    .post__count {
+        padding-left: 30px;
+    }
+    .remove__post {
+        padding-right: 20px;
+    }
+    .header__right-create {
+        padding-top: 58px;
+    }
+    .header__title-create {
+        font-size: 35px;
+        padding: 5px 0 0 15px;
+    }
+    .header__title-create {
+        font-size: 30px;
+        padding-left: 25px;
+    }
+    .header__title-create-comment {
+        font-size: 30px;
+        padding-left: 25px;
+    }
+    .input__create-posts {
+        width: 250px;
+    }
+    .bar {
+        width: 250px;
+    }
+    .group {
+        padding-left: 20px;
+    }
+}
